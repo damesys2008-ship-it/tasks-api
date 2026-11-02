@@ -1,0 +1,17 @@
+name: Hello
+
+on:
+  push:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Bonjour
+        run: 'echo "Bonjour depuis GitHub Actions !"'
+
+      - name: Affiche la branche
+        run: 'echo "Branche: ${{ github.ref_name }}"'
+
+      - name: Affiche l'auteur
+        run: 'echo "Auteur: ${{ github.actor }}"'
