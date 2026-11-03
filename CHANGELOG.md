@@ -3,4 +3,5 @@
 ## Non publié
 
 - Version initiale de l'API tasks-api.
+- Ajout de la fonctionnalité B.
 - Ajout de la fonctionnalité A
