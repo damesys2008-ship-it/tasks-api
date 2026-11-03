@@ -45,3 +45,10 @@ jobs:
 
       - name: Lancer les tests avec couverture
         run: pytest --cov=app --cov-fail-under=80
+
+      - name: Publier le rapport de couverture
+        if: matrix. python-version == '3.12'
+        uses: actions/upload-artifact@v7
+        with:
+          name: coverage-report
+          path: coverage.xml
